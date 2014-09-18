@@ -5,7 +5,7 @@
 ## calculated and returns the cached value if it is.
 
 
-## This is the first function which returns a 2 x 2 matrix of functions: set, get, setinv and getinv
+## This is the first function which returns a list of functions: set, get, setinv and getinv
 ## set and setinv are used to set the values of x and the inverse respectively.
 ## get and getinv are used to get the values of x and the inverse respectively
 
@@ -29,7 +29,7 @@ getinv <- function() {
 minv
 }
 
-matrix(c(set = set, get = get, setinv = setinv, getinv = getinv), nrow = 2, ncol = 2)
+list(set = set, get = get, setinv = setinv, getinv = getinv)
 }
 
 
